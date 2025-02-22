@@ -1,0 +1,51 @@
+const AssignmentCard = ({ title, description, date, source }: { title: string; description: string; date: string; source: string }) => (
+  <div className="p-6 bg-card border rounded-lg hover:shadow-lg transition-shadow duration-300">
+    <span className="text-sm text-muted-foreground">{date}</span>
+    <h3 className="text-xl font-semibold mt-2">{title}</h3>
+    <p className="mt-2 text-muted-foreground">{description}</p>
+    <a href={source} target="_blank" rel="noopener noreferrer" className="mt-4 inline-block text-primary hover:underline">
+      See more →
+    </a>
+  </div>
+);
+
+import Footer from '@/components/Footer';
+import presentationIntro from '../assets/assignments/presentation_intro.pdf';
+import userRequirements from '../assets/assignments/user_requirements.pdf';
+
+const Assignments = () => {
+  const assignments = [
+    {
+      title: 'Assignment 2',
+      description: 'User Requirements',
+      date: 'February 17, 2025',
+      source: userRequirements,
+    },
+    {
+      title: 'Assignment 1',
+      description: 'Project Initial Presentation',
+      date: 'February 10, 2025',
+      source: presentationIntro,
+    },
+  ];
+
+  return (
+    <div className="min-h-screen flex flex-col pt-24 px-6 animate-fadeIn">
+      <div className="container max-w-5xl mx-auto">
+        <div className="text-center mb-12">
+          <span className="px-3 py-1 text-sm bg-secondary inline-block rounded-full">Course Materials</span>
+          <h1 className="text-3xl sm:text-4xl font-semibold mt-4">Assignments</h1>
+          <p className="mt-4 text-muted-foreground max-w-2xl mx-auto">Explore our carefully crafted assignments designed to help you master web development.</p>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {assignments.map((assignment, index) => (
+            <AssignmentCard key={index} {...assignment} />
+          ))}
+        </div>
+      </div>
+      <Footer />
+    </div>
+  );
+};
+
+export default Assignments;
