@@ -44,7 +44,7 @@ const About = () => {
         <div className="text-center mb-12">
           <span className="px-3 py-1 text-sm bg-secondary inline-block rounded-full">Our Team</span>
           <h1 className="text-3xl sm:text-4xl font-semibold mt-4">Meet the Team</h1>
-          <p className="mt-4 text-muted-foreground max-w-2xl mx-auto">We're a dedicated group of professionals passionate about creating exceptional web experiences.</p>
+          <p className="mt-4 text-muted-foreground max-w-2xl mx-auto">We are a group of students from University of Pavol Jozef Safarik.</p>
         </div>
         <div className="team-grid">
           {team.map((member, index) => (
