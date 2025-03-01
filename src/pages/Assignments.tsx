@@ -10,11 +10,18 @@ const AssignmentCard = ({ title, description, date, source }: { title: string; d
 );
 
 import Footer from '@/components/Footer';
+import swotAnalysis from '../assets/assignments/swot.pdf';
 import presentationIntro from '../assets/assignments/presentation_intro.pdf';
 import userRequirements from '../assets/assignments/user_requirements.pdf';
 
 const Assignments = () => {
   const assignments = [
+    {
+      title: 'Assignment 3',
+      description: 'SWOT analysis',
+      date: 'February 24, 2025',
+      source: swotAnalysis,
+    },
     {
       title: 'Assignment 2',
       description: 'User Requirements',
