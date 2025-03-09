@@ -13,9 +13,17 @@ import Footer from '@/components/Footer';
 import swotAnalysis from '../assets/assignments/swot.pdf';
 import presentationIntro from '../assets/assignments/presentation_intro.pdf';
 import userRequirements from '../assets/assignments/user_requirements.pdf';
+import ethicalAspects from '../assets/assignments/ethical-aspects.pdf';
+
 
 const Assignments = () => {
   const assignments = [
+    {
+      title: 'Assignment 4',
+      description: 'Ethical aspects',
+      date: 'March 3, 2025',
+      source: ethicalAspects,
+    },
     {
       title: 'Assignment 3',
       description: 'SWOT analysis',
