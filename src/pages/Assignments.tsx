@@ -14,10 +14,17 @@ import swotAnalysis from '../assets/assignments/swot.pdf';
 import presentationIntro from '../assets/assignments/presentation_intro.pdf';
 import userRequirements from '../assets/assignments/user_requirements.pdf';
 import ethicalAspects from '../assets/assignments/ethical-aspects.pdf';
+import erDiagram from '../assets/assignments/ER_diagram.pdf';
 
 
 const Assignments = () => {
   const assignments = [
+    {
+      title: 'Assignment 5',
+      description: 'ER diagram',
+      date: 'March 10, 2025',
+      source: erDiagram,
+    },
     {
       title: 'Assignment 4',
       description: 'Ethical aspects',
