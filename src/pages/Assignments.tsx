@@ -15,10 +15,17 @@ import presentationIntro from '../assets/assignments/presentation_intro.pdf';
 import userRequirements from '../assets/assignments/user_requirements.pdf';
 import ethicalAspects from '../assets/assignments/ethical-aspects.pdf';
 import erDiagram from '../assets/assignments/ER_diagram.pdf';
+import modelData from '../assets/assignments/vizualizacia_modelovych_dat.pdf';
 
 
 const Assignments = () => {
   const assignments = [
+    {
+      title: 'Assignment 6',
+      description: 'Visualization of data',
+      date: 'March 17, 2025',
+      source: modelData,
+    },
     {
       title: 'Assignment 5',
       description: 'ER diagram',
